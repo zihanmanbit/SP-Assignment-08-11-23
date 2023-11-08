@@ -9,7 +9,7 @@ double findArea(int radius)
 
 int main()
 {
-    int rad1, rad2;
+    int rad1,rad2;
 
     printf("Enter the radius of the first circle: ");
     scanf("%d", &rad1);
@@ -21,11 +21,11 @@ int main()
     double area2 = findArea(rad2);
 
     if (area1 > area2)
-        printf("The area of the first circle with radius %d is greater, which is %.2lf\n", rad1, area1);
+        printf("Area of the first circle with radius %d is greater, which is %.2lf\n", rad1, area1);
     else if (area2 > area1)
-        printf("The area of the second circle with radius %d is greater, which is %.2lf\n", rad2, area2);
+        printf("Area of the second circle with radius %d is greater, which is %.2lf\n", rad2, area2);
     else
-        printf("The areas of both circles are equal: %.2lf\n", area1);
+        printf("Areas of both the circles are equal, which is %.2lf\n", area1);
 
     return 0;
 }
