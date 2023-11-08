@@ -1,31 +1,31 @@
-#include <stdio.h
+#include<stdio.h>
 
-#define PI 3.14159265359
+#define PI 3.141592654
 
-double findArea(int radius) {
-    double area = PI * radius * radius;
-    return area;
+double findArea(int radius)
+{
+    return PI * radius * radius;
 }
 
-int main() {
-    int radius1, radius2;
+int main()
+{
+    int rad1, rad2;
 
     printf("Enter the radius of the first circle: ");
-    scanf("%d", &radius1);
+    scanf("%d", &rad1);
 
     printf("Enter the radius of the second circle: ");
-    scanf("%d", &radius2);
+    scanf("%d", &rad2);
 
-    double area1 = findArea(radius1);
-    double area2 = findArea(radius2);
+    double area1 = findArea(rad1);
+    double area2 = findArea(rad2);
 
-    if (area1 > area2) {
-        printf("The area of the first circle with radius %d is greater: %.2lf\n", radius1, area1);
-    } else if (area2 > area1) {
-        printf("The area of the second circle with radius %d is greater: %.2lf\n", radius2, area2);
-    } else {
+    if (area1 > area2)
+        printf("The area of the first circle with radius %d is greater, which is %.2lf\n", rad1, area1);
+    else if (area2 > area1)
+        printf("The area of the second circle with radius %d is greater, which is %.2lf\n", rad2, area2);
+    else
         printf("The areas of both circles are equal: %.2lf\n", area1);
-    }
 
     return 0;
 }
